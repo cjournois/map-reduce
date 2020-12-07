@@ -6,9 +6,11 @@ function reduce(data) {
 		[Category.Medium]: 0,
 		[Category.Large]: 0
 	}
-	Object.keys(data).forEach((key) => {
-		reduce[data[key][0]] = reduce[data[key][0]] + data[key].length
-	})
+	const keys = Object.keys(data)
+	const keysLength = keys.length
+	for (let i = 0; i < keysLength; i++) {
+		reduce[data[keys[i]][0]] = reduce[data[keys[i]][0]] + data[keys[i]].length
+	}
 	return reduce
 }
 

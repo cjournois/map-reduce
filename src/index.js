@@ -1,13 +1,13 @@
 import { format, map, read, reduce, write } from './helpers'
 
-function init() {
-	let data = read()
-	data = format(data)
-	data = map(data)
-	data = reduce(data)
-	write(data)
+function main() {
+	read()
+	|> format
+	|> map
+	|> reduce
+	|> write
 }
 
-console.time('init')
-init()
-console.timeEnd('init')
+console.time('main')
+main()
+console.timeEnd('main')

@@ -9,15 +9,16 @@ function getWordResult(map, word, category) {
 
 function map(data) {
 	const map = {}
-	data.forEach((word) => {
-		if (word.length > 10) {
-			map[word] = getWordResult(map, word, Category.Large)
-		} else if (word.length < 5) {
-			map[word] = getWordResult(map, word, Category.Short)
+	const dataLength = data.length
+	for (let i = 0; i < dataLength; i++) {
+		if (data[i].length > 10) {
+			map[data[i]] = getWordResult(map, data[i], Category.Large)
+		} else if (data[i].length < 5) {
+			map[data[i]] = getWordResult(map, data[i], Category.Short)
 		} else {
-			map[word] = getWordResult(map, word, Category.Medium)
+			map[data[i]] = getWordResult(map, data[i], Category.Medium)
 		}
-	})
+	}
 	return map
 }
 
