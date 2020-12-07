@@ -8,10 +8,11 @@ function format(data) {
 		.replaceAll(',', ' ')
 		.replaceAll('-', ' ')
 		.replaceAll('"', ' ')
-		.replaceAll('  ', ' ')
-		.replaceAll('  ', ' ')
+		.replaceAll('«', ' ')
+		.replaceAll('»', ' ')
 		.replaceAll('  ', ' ')
 		.split(' ')
+		.filter((word) => word !== '')
 }
 
 export default format
