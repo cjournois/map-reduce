@@ -1,5 +1,5 @@
 function format(data) {
-	return data
+	const formattedData = data
 		.join(' ')
 		.replaceAll('\n', ' ')
 		.replaceAll('.', ' ')
@@ -13,6 +13,8 @@ function format(data) {
 		.replaceAll('  ', ' ')
 		.split(' ')
 		.filter((word) => word !== '')
+	console.log(formattedData.length)
+	return formattedData
 }
 
 export default format

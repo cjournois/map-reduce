@@ -8,4 +8,6 @@ function init() {
 	write(data)
 }
 
+console.time('init')
 init()
+console.timeEnd('init')
