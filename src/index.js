@@ -1,27 +1,4 @@
-
-function read() {
-	return []
-}
-
-
-function format(data) {
-	return []
-}
-
-
-function map(data) {
-	return []
-}
-
-
-function reduce(data) {
-	return []
-}
-
-
-function write(data) {
-	console.log('void')
-}
+import { format, map, read, reduce, write } from './helpers'
 
 function init() {
 	let data = read()
@@ -30,3 +7,5 @@ function init() {
 	data = reduce(data)
 	write(data)
 }
+
+init()
