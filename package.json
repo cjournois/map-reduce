@@ -1,0 +1,14 @@
+{
+  "name": "map-reduce",
+  "version": "0.1.0",
+  "description": "Read the README.md",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-node": "0.0.1-security",
+    "nodemon": "^2.0.6"
+  }
+}
