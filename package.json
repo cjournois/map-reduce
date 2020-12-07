@@ -4,7 +4,8 @@
   "description": "Read the README.md",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node -- src/index.js"
+    "node": "babel-node src/index.js",
+    "node:watch": "nodemon --exec babel-node -- src/index.js"
   },
   "license": "MIT",
   "devDependencies": {
