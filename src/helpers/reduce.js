@@ -7,7 +7,7 @@ function reduce(data) {
 		[Category.Large]: 0
 	}
 	Object.keys(data).forEach((key) => {
-		reduce[data[key]] = reduce[data[key]] + 1
+		reduce[data[key][0]] = reduce[data[key][0]] + data[key].length
 	})
 	return reduce
 }
