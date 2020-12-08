@@ -19,4 +19,4 @@ yarn-error.log
 
 # Build and cache
 dist/
-result/
+tlor.csv
