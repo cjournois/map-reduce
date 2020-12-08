@@ -18,5 +18,5 @@ Mini project to introduce MapReduce.
 
 ```zsh
 npm i
-npm run start
+npm run node
 ```
