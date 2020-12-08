@@ -7,7 +7,7 @@ function writeFileWithFs(data) {
 		return `${res + String(Object.keys(Category)[categoryKey])}\t${data[categoryKey]}\n`
 	}, '')
 
-	fs.writeFile('result/tlor.xls', result, () => {
+	fs.writeFile('result/tlor.csv', result, () => {
 		console.log('file created')
 	})
 }
