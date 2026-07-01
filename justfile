@@ -1,11 +1,11 @@
 default:
     @just --list
 
-ci:
-    bun install --frozen-lockfile
-
 install:
     bun install
+
+ci:
+    rm -rf node_modules && bun install --frozen-lockfile
 
 lint:
     bun run lint
